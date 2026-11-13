@@ -1,0 +1,28 @@
+{
+  "fusion": "cross-attention over real ResNet patch embeddings and clinical tokens",
+  "graph_features": "initial attention-fused patient vectors",
+  "layers": 2,
+  "fixed_config": {
+    "k": 3,
+    "minimum": 0.0,
+    "dropout": 0.2,
+    "lr": 0.001
+  },
+  "seeds": [
+    42,
+    7,
+    2026
+  ],
+  "selection": "validation balanced accuracy, macro-F1, then log loss",
+  "test_evaluated": false,
+  "patients": {
+    "train": 130,
+    "validation": 44
+  },
+  "patch_tokens": {
+    "minimum": 4,
+    "maximum": 16,
+    "total": 964
+  },
+  "test_note": "Test patients are excluded from patch extraction, training and validation."
+}

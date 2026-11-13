@@ -1,0 +1,74 @@
+{
+  "architecture": "32 -> 16 -> 2 MLP with ReLU and dropout",
+  "clinical_features": [
+    "age_at_diagnosis in years",
+    "race",
+    "ethnicity"
+  ],
+  "preprocessing_fit_on": "train only",
+  "checkpoint_selection": "lowest validation cross-entropy with early stopping",
+  "seeds": [
+    42,
+    7,
+    2026
+  ],
+  "ensemble": "mean of seed probabilities",
+  "test_evaluated": false,
+  "train_patients": 130,
+  "validation": {
+    "patients": 44,
+    "accuracy": 0.5454545454545454,
+    "balanced_accuracy": 0.6352941176470588,
+    "macro_f1": 0.5299145299145299,
+    "roc_auc": 0.6205882352941177,
+    "log_loss": 0.6615544661359507,
+    "confusion_matrix": [
+      [
+        16,
+        18
+      ],
+      [
+        2,
+        8
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.8888888888888888,
+        "recall": 0.47058823529411764,
+        "f1-score": 0.6153846153846154,
+        "support": 34.0
+      },
+      "1": {
+        "precision": 0.3076923076923077,
+        "recall": 0.8,
+        "f1-score": 0.4444444444444444,
+        "support": 10.0
+      },
+      "accuracy": 0.5454545454545454,
+      "macro avg": {
+        "precision": 0.5982905982905983,
+        "recall": 0.6352941176470588,
+        "f1-score": 0.5299145299145299,
+        "support": 44.0
+      },
+      "weighted avg": {
+        "precision": 0.7567987567987569,
+        "recall": 0.5454545454545454,
+        "f1-score": 0.5765345765345766,
+        "support": 44.0
+      }
+    }
+  },
+  "training_parameters": {
+    "epochs": 300,
+    "patience": 30,
+    "learning_rate": 0.001,
+    "weight_decay": 0.001
+  },
+  "model_files": [
+    "seed_42.pt",
+    "seed_7.pt",
+    "seed_2026.pt"
+  ]
+}

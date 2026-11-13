@@ -1,0 +1,9 @@
+case_uuid,slide_file_uuid,patch_file,x,y,level,mpp_x,normalization
+4d1bf9e6-5837-4aed-b568-92f014ed5a4b,1bac9786-4d56-4f08-9792-ed131b398907,data/models/multimodal_gat_latest_downloads_run1/patches/1bac9786-4d56-4f08-9792-ed131b398907/x52815_y14876.png,52815,14876,0,0.248,modified_macenko
+4d1bf9e6-5837-4aed-b568-92f014ed5a4b,1bac9786-4d56-4f08-9792-ed131b398907,data/models/multimodal_gat_latest_downloads_run1/patches/1bac9786-4d56-4f08-9792-ed131b398907/x79403_y17053.png,79403,17053,0,0.248,modified_macenko
+4d1bf9e6-5837-4aed-b568-92f014ed5a4b,1bac9786-4d56-4f08-9792-ed131b398907,data/models/multimodal_gat_latest_downloads_run1/patches/1bac9786-4d56-4f08-9792-ed131b398907/x60308_y18383.png,60308,18383,0,0.248,modified_macenko
+4d1bf9e6-5837-4aed-b568-92f014ed5a4b,1bac9786-4d56-4f08-9792-ed131b398907,data/models/multimodal_gat_latest_downloads_run1/patches/1bac9786-4d56-4f08-9792-ed131b398907/x18491_y19351.png,18491,19351,0,0.248,modified_macenko
+4d1bf9e6-5837-4aed-b568-92f014ed5a4b,d7d52c3b-11ed-4458-bd68-d00d98c82fac,data/models/multimodal_gat_latest_downloads_run1/patches/d7d52c3b-11ed-4458-bd68-d00d98c82fac/x16576_y600.png,16576,600,0,0.2505,modified_macenko
+4d1bf9e6-5837-4aed-b568-92f014ed5a4b,d7d52c3b-11ed-4458-bd68-d00d98c82fac,data/models/multimodal_gat_latest_downloads_run1/patches/d7d52c3b-11ed-4458-bd68-d00d98c82fac/x20027_y2026.png,20027,2026,0,0.2505,modified_macenko
+4d1bf9e6-5837-4aed-b568-92f014ed5a4b,d7d52c3b-11ed-4458-bd68-d00d98c82fac,data/models/multimodal_gat_latest_downloads_run1/patches/d7d52c3b-11ed-4458-bd68-d00d98c82fac/x12976_y2776.png,12976,2776,0,0.2505,modified_macenko
+4d1bf9e6-5837-4aed-b568-92f014ed5a4b,d7d52c3b-11ed-4458-bd68-d00d98c82fac,data/models/multimodal_gat_latest_downloads_run1/patches/d7d52c3b-11ed-4458-bd68-d00d98c82fac/x13426_y3151.png,13426,3151,0,0.2505,modified_macenko

@@ -1,0 +1,122 @@
+{
+  "selected": {
+    "config": 5,
+    "k": 7,
+    "minimum": 0.0,
+    "dropout": 0.2,
+    "lr": 0.001,
+    "validation_accuracy": 0.7272727272727273,
+    "validation_macro_f1": 0.65625,
+    "validation_balanced_accuracy": 0.65625
+  },
+  "seeds": [
+    42,
+    7,
+    2026
+  ],
+  "validation": {
+    "balanced_accuracy": 0.65625,
+    "roc_auc": 0.7291666666666667,
+    "confusion_matrix": [
+      [
+        13,
+        3
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.8125,
+        "recall": 0.8125,
+        "f1-score": 0.8125,
+        "support": 16.0
+      },
+      "1": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1-score": 0.5,
+        "support": 6.0
+      },
+      "accuracy": 0.7272727272727273,
+      "macro avg": {
+        "precision": 0.65625,
+        "recall": 0.65625,
+        "f1-score": 0.65625,
+        "support": 22.0
+      },
+      "weighted avg": {
+        "precision": 0.7272727272727273,
+        "recall": 0.7272727272727273,
+        "f1-score": 0.7272727272727273,
+        "support": 22.0
+      }
+    },
+    "accuracy": 0.7272727272727273,
+    "macro_f1": 0.65625,
+    "log_loss": 0.5655975568190765,
+    "accuracy_95_wilson_interval": [
+      0.5184787630099802,
+      0.8684941798418556
+    ],
+    "patients": 22,
+    "correct": 16,
+    "majority_class_accuracy": 0.7272727272727273
+  },
+  "test": {
+    "balanced_accuracy": 0.6617647058823529,
+    "roc_auc": 0.7352941176470589,
+    "confusion_matrix": [
+      [
+        14,
+        3
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.8235294117647058,
+        "recall": 0.8235294117647058,
+        "f1-score": 0.8235294117647058,
+        "support": 17.0
+      },
+      "1": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1-score": 0.5,
+        "support": 6.0
+      },
+      "accuracy": 0.7391304347826086,
+      "macro avg": {
+        "precision": 0.6617647058823529,
+        "recall": 0.6617647058823529,
+        "f1-score": 0.6617647058823529,
+        "support": 23.0
+      },
+      "weighted avg": {
+        "precision": 0.7391304347826086,
+        "recall": 0.7391304347826086,
+        "f1-score": 0.7391304347826086,
+        "support": 23.0
+      }
+    },
+    "accuracy": 0.7391304347826086,
+    "macro_f1": 0.6617647058823529,
+    "log_loss": 0.539432659053237,
+    "accuracy_95_wilson_interval": [
+      0.5352960945624944,
+      0.8745155411075104
+    ],
+    "patients": 23,
+    "correct": 17,
+    "majority_class_accuracy": 0.7391304347826086
+  },
+  "test_evaluated": true,
+  "selection_metric": "validation accuracy, then macro-F1, then lower log-loss",
+  "test_note": "The accuracy-based follow-up was prompted after the original test result was inspected. Candidate choice used validation metrics, but this comparison is post-hoc, not confirmatory; this cohort also appeared in prior experiments."
+}

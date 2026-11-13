@@ -1,0 +1,134 @@
+{
+  "selected": {
+    "config": 5,
+    "k": 7,
+    "minimum": 0.0,
+    "dropout": 0.2,
+    "lr": 0.001,
+    "mean_balanced_accuracy": 0.6754901960784313,
+    "std_balanced_accuracy": 0.0069324194233975,
+    "mean_macro_f1": 0.5435509813218792,
+    "mean_log_loss": 0.7105145749812872
+  },
+  "seeds": [
+    42,
+    7,
+    2026
+  ],
+  "validation": {
+    "balanced_accuracy": 0.6705882352941177,
+    "roc_auc": 0.5352941176470589,
+    "confusion_matrix": [
+      [
+        15,
+        19
+      ],
+      [
+        1,
+        9
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9375,
+        "recall": 0.4411764705882353,
+        "f1-score": 0.6,
+        "support": 34.0
+      },
+      "1": {
+        "precision": 0.32142857142857145,
+        "recall": 0.9,
+        "f1-score": 0.47368421052631576,
+        "support": 10.0
+      },
+      "accuracy": 0.5454545454545454,
+      "macro avg": {
+        "precision": 0.6294642857142857,
+        "recall": 0.6705882352941177,
+        "f1-score": 0.5368421052631579,
+        "support": 44.0
+      },
+      "weighted avg": {
+        "precision": 0.7974837662337663,
+        "recall": 0.5454545454545454,
+        "f1-score": 0.5712918660287081,
+        "support": 44.0
+      }
+    },
+    "accuracy": 0.5454545454545454,
+    "macro_f1": 0.5368421052631579,
+    "log_loss": 0.709348131894069,
+    "accuracy_95_wilson_interval": [
+      0.4006593217065349,
+      0.6829499221314639
+    ],
+    "patients": 44,
+    "correct": 24,
+    "majority_class_accuracy": 0.7727272727272727
+  },
+  "test_evaluated": true,
+  "target_accuracy": 0.75,
+  "selection_metric": "validation balanced accuracy",
+  "architecture": "bidirectional cross-attention fusion followed by two residual GAT layers with per-patient LayerNorm and linear classifier",
+  "graph": {
+    "training_nodes": 130,
+    "edges_without_self_loops": 910,
+    "similarity_range": [
+      0.9115744233131409,
+      0.9999819397926331
+    ],
+    "self_loops": "added by GATConv",
+    "isolated_before_self_loops": 0
+  },
+  "test": {
+    "balanced_accuracy": 0.4882352941176471,
+    "roc_auc": 0.47352941176470587,
+    "confusion_matrix": [
+      [
+        6,
+        28
+      ],
+      [
+        2,
+        8
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.75,
+        "recall": 0.17647058823529413,
+        "f1-score": 0.2857142857142857,
+        "support": 34.0
+      },
+      "1": {
+        "precision": 0.2222222222222222,
+        "recall": 0.8,
+        "f1-score": 0.34782608695652173,
+        "support": 10.0
+      },
+      "accuracy": 0.3181818181818182,
+      "macro avg": {
+        "precision": 0.4861111111111111,
+        "recall": 0.4882352941176471,
+        "f1-score": 0.3167701863354037,
+        "support": 44.0
+      },
+      "weighted avg": {
+        "precision": 0.6300505050505051,
+        "recall": 0.3181818181818182,
+        "f1-score": 0.2998306041784302,
+        "support": 44.0
+      }
+    },
+    "accuracy": 0.3181818181818182,
+    "macro_f1": 0.3167701863354037,
+    "log_loss": 0.8210168550160276,
+    "accuracy_95_wilson_interval": [
+      0.19999129931673562,
+      0.46557172533126934
+    ],
+    "patients": 44,
+    "correct": 14,
+    "majority_class_accuracy": 0.7727272727272727
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "selected_patients": 250,
+  "patients_with_svs": 250,
+  "patients_without_svs": 0,
+  "total_svs_files": 725,
+  "patient_slide_associations": 725,
+  "patients_with_multiple_slides": 245,
+  "additional_associations_vs_local": 150,
+  "local_associations_not_in_api": 0,
+  "retrieved_at_utc": "2026-09-28T08:09:57.889581+00:00",
+  "metadata_endpoint": "https://api.gdc.cancer.gov/files"
+}

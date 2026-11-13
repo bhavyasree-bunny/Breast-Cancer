@@ -1,0 +1,11 @@
+{
+  "criterion": "validation accuracy, then macro-F1, then lower log-loss",
+  "threshold": 0.5,
+  "seeds": [
+    42,
+    7,
+    2026
+  ],
+  "cohort_sha256": "ed5441684b966cf2622a31aa04d34dd70a18a162fad7c9adfadbc248b7c0329b",
+  "test_note": "The accuracy-based follow-up was prompted after the original test result was inspected. Candidate choice used validation metrics, but this comparison is post-hoc, not confirmatory; this cohort also appeared in prior experiments."
+}

@@ -1,0 +1,72 @@
+{
+  "configs": [
+    {
+      "k": 0,
+      "minimum": 0.0,
+      "dropout": 0.2,
+      "lr": 0.001
+    },
+    {
+      "k": 3,
+      "minimum": 0.0,
+      "dropout": 0.2,
+      "lr": 0.0003
+    },
+    {
+      "k": 3,
+      "minimum": 0.0,
+      "dropout": 0.2,
+      "lr": 0.001
+    },
+    {
+      "k": 3,
+      "minimum": 0.25,
+      "dropout": 0.2,
+      "lr": 0.0003
+    },
+    {
+      "k": 3,
+      "minimum": 0.25,
+      "dropout": 0.2,
+      "lr": 0.001
+    },
+    {
+      "k": 7,
+      "minimum": 0.0,
+      "dropout": 0.2,
+      "lr": 0.0003
+    },
+    {
+      "k": 7,
+      "minimum": 0.0,
+      "dropout": 0.2,
+      "lr": 0.001
+    },
+    {
+      "k": 7,
+      "minimum": 0.25,
+      "dropout": 0.2,
+      "lr": 0.0003
+    },
+    {
+      "k": 7,
+      "minimum": 0.25,
+      "dropout": 0.2,
+      "lr": 0.001
+    }
+  ],
+  "seeds": [
+    42,
+    7,
+    2026
+  ],
+  "criterion": "mean seed validation balanced accuracy; mean macro-F1 then log-loss tie-break",
+  "fusion": "bidirectional multihead cross-attention between 32 image embedding chunks and age/demographic clinical tokens",
+  "graph_features": "equal-weight concatenation of training-fitted, L2-normalized image and clinical blocks; no untrained fusion layer determines graph edges",
+  "graph_ablation": "k=0 candidate uses self-loops only, with no inter-patient edges",
+  "threshold": 0.5,
+  "epochs": 150,
+  "patience": 30,
+  "cohort_sha256": "6fd943c56a4aea74664dd7046dd64093edd32eadee36c8f0089ed38295df4ddb",
+  "test_note": "Previously inspected holdout; no test features loaded during search."
+}

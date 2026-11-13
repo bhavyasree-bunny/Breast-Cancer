@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "stain_order": [
+    "hematoxylin",
+    "eosin"
+  ],
+  "reference_percentile": [
+    2.3429595522589857,
+    1.2544278802531896
+  ],
+  "percentile": 95,
+  "reference_stain_matrix": [
+    [
+      0.5625827824174121,
+      0.21589893562087106
+    ],
+    [
+      0.7200779623511881,
+      0.8011960501132093
+    ],
+    [
+      0.4061875688196815,
+      0.5580972485873467
+    ]
+  ],
+  "seed": 20260925,
+  "patch_size": 224,
+  "patch_count": 16,
+  "selection": "Eight row-ordered thumbnail tissue bands per slide; seeded sampling; nonoverlapping level-0 patches; >=70% tissue; >=100 OD-mask pixels; both concentration percentiles positive; max eight attempts per band.",
+  "calculation": "Median of patchwise 95th-percentile nonnegative least-squares concentrations in the fixed reference reconstruction stain basis.",
+  "adaptive_modification": "C_prime = C * (P_ref / (P_source + epsilon)) ** alpha",
+  "alpha": "clip(1 / (1 + mean(std(C, axis=1))), 0.5, 1.0); computed per source patch",
+  "scope": "Pilot reference from available local slides; not population validated.",
+  "numpy_version": "2.0.2",
+  "patches": [
+    {
+      "slide_file": "data/images/slide1/slide1.svs",
+      "slide_size_bytes": 605289055,
+      "x": 124291,
+      "y": 4781,
+      "level": 0,
+      "band": 0,
+      "tissue_percent": 90.3938137755102,
+      "tissue_pixels": 35451,
+      "concentration_p95": [
+        0.9920409030330892,
+        1.8016292905862548
+      ]
+    },
+    {
+      "slide_file": "data/images/slide1/slide1.svs",
+      "slide_size_bytes": 605289055,
+      "x": 128806,
+      "y": 9827,
+      "level": 0,
+      "band": 1,
+      "tissue_percent": 97.65226403061224,
+      "tissue_pixels": 47001,
+      "concentration_p95": [
+        3.016513686439375,
+        1.6425638354665892
+      ]
+    },
+    {
+      "slide_file": "data/images/slide1/slide1.svs",
+      "slide_size_bytes": 605289055,
+      "x": 11951,
+      "y": 15140,
+      "level": 0,
+      "band": 2,
+      "tissue_percent": 99.99402104591837,
+      "tissue_pixels": 49633,
+      "concentration_p95": [
+        2.4170617389896263,
+        1.6227956057784392
+      ]
+    },
+    {
+      "slide_file": "data/images/slide1/slide1.svs",
+      "slide_size_bytes": 605289055,
+      "x": 93218,
+      "y": 16999,
+      "level": 0,
+      "band": 3,
+      "tissue_percent": 97.18191964285714,
+      "tissue_pixels": 45214,
+      "concentration_p95": [
+        2.1283963974771063,
+        0.9166958363651082
+      ]
+    },
+    {
+      "slide_file": "data/images/slide1/slide1.svs",
+      "slide_size_bytes": 605289055,
+      "x": 44086,
+      "y": 18327,
+      "level": 0,
+      "band": 4,
+      "tissue_percent": 90.67283163265306,
+      "tissue_pixels": 38180,
+      "concentration_p95": [
+        2.2688573655283446,
+        1.0304234114230049
+      ]
+    },
+    {
+      "slide_file": "data/images/slide1/slide1.svs",
+      "slide_size_bytes": 605289055,
+      "x": 99592,
+      "y": 22577,
+      "level": 0,
+      "band": 5,
+      "tissue_percent": 81.76817602040816,
+      "tissue_pixels": 35842,
+      "concentration_p95": [
+        2.608906918976331,
+        1.2525716168248506
+      ]
+    },
+    {
+      "slide_file": "data/images/slide1/slide1.svs",
+      "slide_size_bytes": 605289055,
+      "x": 33197,
+      "y": 26561,
+      "level": 0,
+      "band": 6,
+      "tissue_percent": 98.74641262755102,
+      "tissue_pixels": 48218,
+      "concentration_p95": [
+        2.1418157752318074,
+        1.278090736747982
+      ]
+    },
+    {
+      "slide_file": "data/images/slide1/slide1.svs",
+      "slide_size_bytes": 605289055,
+      "x": 30276,
+      "y": 32139,
+      "level": 0,
+      "band": 7,
+      "tissue_percent": 99.29647640306123,
+      "tissue_pixels": 48339,
+      "concentration_p95": [
+        2.4588132435374273,
+        1.4947838669219593
+      ]
+    },
+    {
+      "slide_file": "data/images/slide2/slide2.svs",
+      "slide_size_bytes": 420174395,
+      "x": 17277,
+      "y": 6990,
+      "level": 0,
+      "band": 0,
+      "tissue_percent": 99.54559948979592,
+      "tissue_pixels": 49404,
+      "concentration_p95": [
+        3.1315425612350114,
+        0.5877269264485263
+      ]
+    },
+    {
+      "slide_file": "data/images/slide2/slide2.svs",
+      "slide_size_bytes": 420174395,
+      "x": 63258,
+      "y": 10066,
+      "level": 0,
+      "band": 1,
+      "tissue_percent": 88.89708227040816,
+      "tissue_pixels": 41735,
+      "concentration_p95": [
+        3.2854991642314575,
+        0.4798565134555467
+      ]
+    },
+    {
+      "slide_file": "data/images/slide2/slide2.svs",
+      "slide_size_bytes": 420174395,
+      "x": 23965,
+      "y": 15380,
+      "level": 0,
+      "band": 2,
+      "tissue_percent": 78.17482461734694,
+      "tissue_pixels": 35132,
+      "concentration_p95": [
+        3.1710009753922273,
+        0.6928983146386545
+      ]
+    },
+    {
+      "slide_file": "data/images/slide2/slide2.svs",
+      "slide_size_bytes": 420174395,
+      "x": 64651,
+      "y": 15659,
+      "level": 0,
+      "band": 3,
+      "tissue_percent": 80.13392857142857,
+      "tissue_pixels": 33672,
+      "concentration_p95": [
+        1.3715322122747737,
+        1.2927930480036676
+      ]
+    },
+    {
+      "slide_file": "data/images/slide2/slide2.svs",
+      "slide_size_bytes": 420174395,
+      "x": 68553,
+      "y": 20413,
+      "level": 0,
+      "band": 4,
+      "tissue_percent": 71.83314732142857,
+      "tissue_pixels": 29205,
+      "concentration_p95": [
+        0.7652914576266105,
+        0.7826654657545686
+      ]
+    },
+    {
+      "slide_file": "data/images/slide2/slide2.svs",
+      "slide_size_bytes": 420174395,
+      "x": 134319,
+      "y": 22650,
+      "level": 0,
+      "band": 5,
+      "tissue_percent": 99.90632971938776,
+      "tissue_pixels": 46952,
+      "concentration_p95": [
+        2.1423920023887426,
+        2.3299704550943834
+      ]
+    },
+    {
+      "slide_file": "data/images/slide2/slide2.svs",
+      "slide_size_bytes": 420174395,
+      "x": 102829,
+      "y": 24887,
+      "level": 0,
+      "band": 6,
+      "tissue_percent": 91.97225765306123,
+      "tissue_pixels": 41719,
+      "concentration_p95": [
+        0.6167317319898765,
+        1.2562841436815284
+      ]
+    },
+    {
+      "slide_file": "data/images/slide2/slide2.svs",
+      "slide_size_bytes": 420174395,
+      "x": 111747,
+      "y": 31319,
+      "level": 0,
+      "band": 7,
+      "tissue_percent": 98.37970344387756,
+      "tissue_pixels": 48270,
+      "concentration_p95": [
+        3.3823790758048755,
+        0.6454540812113283
+      ]
+    }
+  ]
+}

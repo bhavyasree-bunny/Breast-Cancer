@@ -1,0 +1,156 @@
+{
+  "cohort_patients": 218,
+  "class_counts": {
+    "ductal": 169,
+    "lobular": 49
+  },
+  "outer_folds": 5,
+  "fold_seed": 20261101,
+  "model_seeds": [
+    42,
+    7,
+    2026
+  ],
+  "epochs": 150,
+  "protocol": "Stratified patient-level outer folds; modality transforms fit on inner training data only; early stopping and threshold selection use inner validation only; outer-fold predictions are out-of-fold. Fixed comparison: no graph versus k=7 graph.",
+  "results": {
+    "no_graph": {
+      "patients": 218,
+      "accuracy": 0.518348623853211,
+      "balanced_accuracy": 0.4647385581451515,
+      "macro_f1": 0.44969347277316984,
+      "roc_auc": 0.4524815843497162,
+      "log_loss": 0.7187645877561186,
+      "confusion_matrix": [
+        [
+          95,
+          74
+        ],
+        [
+          31,
+          18
+        ]
+      ]
+    },
+    "k7_graph": {
+      "patients": 218,
+      "accuracy": 0.5137614678899083,
+      "balanced_accuracy": 0.47627098176548727,
+      "macro_f1": 0.45422768068020786,
+      "roc_auc": 0.46491969568892644,
+      "log_loss": 0.7246987864326147,
+      "confusion_matrix": [
+        [
+          92,
+          77
+        ],
+        [
+          29,
+          20
+        ]
+      ]
+    }
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "model": "no_graph",
+      "k": 0,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "selected_threshold": 0.533591628074646,
+      "inner_balanced_accuracy_at_threshold": 0.6203703703703703
+    },
+    {
+      "fold": 1,
+      "model": "k7_graph",
+      "k": 7,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "selected_threshold": 0.5326480865478516,
+      "inner_balanced_accuracy_at_threshold": 0.6018518518518519
+    },
+    {
+      "fold": 2,
+      "model": "no_graph",
+      "k": 0,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "selected_threshold": 0.5359304547309875,
+      "inner_balanced_accuracy_at_threshold": 0.650462962962963
+    },
+    {
+      "fold": 2,
+      "model": "k7_graph",
+      "k": 7,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "selected_threshold": 0.5456992387771606,
+      "inner_balanced_accuracy_at_threshold": 0.6134259259259259
+    },
+    {
+      "fold": 3,
+      "model": "no_graph",
+      "k": 0,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "selected_threshold": 0.5,
+      "inner_balanced_accuracy_at_threshold": 0.6412037037037037
+    },
+    {
+      "fold": 3,
+      "model": "k7_graph",
+      "k": 7,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "selected_threshold": 0.5455870628356934,
+      "inner_balanced_accuracy_at_threshold": 0.7152777777777778
+    },
+    {
+      "fold": 4,
+      "model": "no_graph",
+      "k": 0,
+      "inner_train_patients": 140,
+      "early_stop_patients": 35,
+      "outer_patients": 43,
+      "selected_threshold": 0.4917955994606018,
+      "inner_balanced_accuracy_at_threshold": 0.7523148148148149
+    },
+    {
+      "fold": 4,
+      "model": "k7_graph",
+      "k": 7,
+      "inner_train_patients": 140,
+      "early_stop_patients": 35,
+      "outer_patients": 43,
+      "selected_threshold": 0.4955001473426819,
+      "inner_balanced_accuracy_at_threshold": 0.7083333333333333
+    },
+    {
+      "fold": 5,
+      "model": "no_graph",
+      "k": 0,
+      "inner_train_patients": 140,
+      "early_stop_patients": 35,
+      "outer_patients": 43,
+      "selected_threshold": 0.5,
+      "inner_balanced_accuracy_at_threshold": 0.6967592592592593
+    },
+    {
+      "fold": 5,
+      "model": "k7_graph",
+      "k": 7,
+      "inner_train_patients": 140,
+      "early_stop_patients": 35,
+      "outer_patients": 43,
+      "selected_threshold": 0.4839789867401123,
+      "inner_balanced_accuracy_at_threshold": 0.6782407407407407
+    }
+  ]
+}

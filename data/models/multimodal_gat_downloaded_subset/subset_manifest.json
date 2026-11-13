@@ -1,0 +1,15 @@
+{
+  "cohort_scope": "interim subset using only available patient embeddings from OpenSlide-verified selected slides at extraction time",
+  "patients_used": 214,
+  "patients_excluded_no_embedding": 4,
+  "split_label_counts": {
+    "train_0": 98,
+    "train_1": 28,
+    "validation_0": 34,
+    "validation_1": 10,
+    "test_0": 34,
+    "test_1": 10
+  },
+  "patch_manifest_rows": 876,
+  "patient_embeddings": 214
+}

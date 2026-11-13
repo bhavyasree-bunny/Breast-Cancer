@@ -1,0 +1,83 @@
+{
+  "selected": {
+    "config": 1,
+    "k": 3,
+    "minimum": 0.0,
+    "dropout": 0.2,
+    "lr": 0.001,
+    "mean_balanced_accuracy": 0.6666666666666666,
+    "std_balanced_accuracy": 1.1102230246251565e-16,
+    "mean_macro_f1": 0.5714285714285714,
+    "mean_log_loss": 0.6091014614981649
+  },
+  "seeds": [
+    42,
+    7,
+    2026
+  ],
+  "validation": {
+    "balanced_accuracy": 0.6666666666666667,
+    "roc_auc": 0.6296296296296297,
+    "confusion_matrix": [
+      [
+        9,
+        9
+      ],
+      [
+        1,
+        5
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9,
+        "recall": 0.5,
+        "f1-score": 0.6428571428571429,
+        "support": 18.0
+      },
+      "1": {
+        "precision": 0.35714285714285715,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.5,
+        "support": 6.0
+      },
+      "accuracy": 0.5833333333333334,
+      "macro avg": {
+        "precision": 0.6285714285714286,
+        "recall": 0.6666666666666667,
+        "f1-score": 0.5714285714285714,
+        "support": 24.0
+      },
+      "weighted avg": {
+        "precision": 0.7642857142857142,
+        "recall": 0.5833333333333334,
+        "f1-score": 0.6071428571428572,
+        "support": 24.0
+      }
+    },
+    "accuracy": 0.5833333333333334,
+    "macro_f1": 0.5714285714285714,
+    "log_loss": 0.6069114722184629,
+    "accuracy_95_wilson_interval": [
+      0.3883433764938864,
+      0.7553265275346177
+    ],
+    "patients": 24,
+    "correct": 14,
+    "majority_class_accuracy": 0.75
+  },
+  "test_evaluated": false,
+  "target_accuracy": 0.75,
+  "selection_metric": "validation balanced accuracy",
+  "architecture": "bidirectional cross-attention fusion followed by two residual GAT layers with per-patient LayerNorm and linear classifier",
+  "graph": {
+    "training_nodes": 68,
+    "edges_without_self_loops": 204,
+    "similarity_range": [
+      0.9607691168785095,
+      0.9999821782112122
+    ],
+    "self_loops": "added by GATConv",
+    "isolated_before_self_loops": 0
+  }
+}

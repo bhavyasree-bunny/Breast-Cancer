@@ -1,0 +1,352 @@
+{
+  "cohort_patients": 218,
+  "class_counts": {
+    "ductal": 169,
+    "lobular": 49
+  },
+  "outer_folds": 5,
+  "fold_seed": 20261101,
+  "model_seeds": [
+    42,
+    7,
+    2026
+  ],
+  "epochs": 150,
+  "protocol": "Stratified patient-level outer folds; clinical and patch scalers fit on inner training data only; early stopping and threshold selection use inner validation only; outer-fold predictions are out-of-fold. Fixed comparison: no graph versus k=7 graph, each trained with balanced class weights and unweighted loss. Frozen ImageNet ResNet-50 patch embeddings.",
+  "results": {
+    "no_graph_weighted": {
+      "patients": 218,
+      "accuracy": 0.5321100917431193,
+      "balanced_accuracy": 0.5315783117980921,
+      "macro_f1": 0.4879801050013816,
+      "roc_auc": 0.5621301775147929,
+      "log_loss": 0.658005404043955,
+      "confusion_matrix": [
+        [
+          90,
+          79
+        ],
+        [
+          23,
+          26
+        ]
+      ]
+    },
+    "k7_graph_weighted": {
+      "patients": 218,
+      "accuracy": 0.481651376146789,
+      "balanced_accuracy": 0.5569979471078372,
+      "macro_f1": 0.4662766764164229,
+      "roc_auc": 0.5989614780823571,
+      "log_loss": 0.6356643309269298,
+      "confusion_matrix": [
+        [
+          71,
+          98
+        ],
+        [
+          15,
+          34
+        ]
+      ]
+    },
+    "no_graph_unweighted": {
+      "patients": 218,
+      "accuracy": 0.5688073394495413,
+      "balanced_accuracy": 0.5842289578553315,
+      "macro_f1": 0.5281385281385281,
+      "roc_auc": 0.6163506822847482,
+      "log_loss": 0.6857165933915376,
+      "confusion_matrix": [
+        [
+          94,
+          75
+        ],
+        [
+          19,
+          30
+        ]
+      ]
+    },
+    "k7_graph_unweighted": {
+      "patients": 218,
+      "accuracy": 0.6146788990825688,
+      "balanced_accuracy": 0.5848327496679145,
+      "macro_f1": 0.5511764705882353,
+      "roc_auc": 0.6130902064967999,
+      "log_loss": 0.6722588947679587,
+      "confusion_matrix": [
+        [
+          108,
+          61
+        ],
+        [
+          23,
+          26
+        ]
+      ]
+    }
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "model": "no_graph_weighted",
+      "k": 0,
+      "class_weighted_loss": true,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.47834181785583496,
+      "inner_balanced_accuracy_at_threshold": 0.6944444444444444
+    },
+    {
+      "fold": 1,
+      "model": "k7_graph_weighted",
+      "k": 7,
+      "class_weighted_loss": true,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.16071172058582306,
+      "inner_balanced_accuracy_at_threshold": 0.6481481481481481
+    },
+    {
+      "fold": 1,
+      "model": "no_graph_unweighted",
+      "k": 0,
+      "class_weighted_loss": false,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.03149718791246414,
+      "inner_balanced_accuracy_at_threshold": 0.6481481481481481
+    },
+    {
+      "fold": 1,
+      "model": "k7_graph_unweighted",
+      "k": 7,
+      "class_weighted_loss": false,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.05336279422044754,
+      "inner_balanced_accuracy_at_threshold": 0.6527777777777778
+    },
+    {
+      "fold": 2,
+      "model": "no_graph_weighted",
+      "k": 0,
+      "class_weighted_loss": true,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.55669105052948,
+      "inner_balanced_accuracy_at_threshold": 0.650462962962963
+    },
+    {
+      "fold": 2,
+      "model": "k7_graph_weighted",
+      "k": 7,
+      "class_weighted_loss": true,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.44900429248809814,
+      "inner_balanced_accuracy_at_threshold": 0.6574074074074074
+    },
+    {
+      "fold": 2,
+      "model": "no_graph_unweighted",
+      "k": 0,
+      "class_weighted_loss": false,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.26396241784095764,
+      "inner_balanced_accuracy_at_threshold": 0.6574074074074074
+    },
+    {
+      "fold": 2,
+      "model": "k7_graph_unweighted",
+      "k": 7,
+      "class_weighted_loss": false,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.27710098028182983,
+      "inner_balanced_accuracy_at_threshold": 0.6759259259259259
+    },
+    {
+      "fold": 3,
+      "model": "no_graph_weighted",
+      "k": 0,
+      "class_weighted_loss": true,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.46280282735824585,
+      "inner_balanced_accuracy_at_threshold": 0.6481481481481481
+    },
+    {
+      "fold": 3,
+      "model": "k7_graph_weighted",
+      "k": 7,
+      "class_weighted_loss": true,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.4241445064544678,
+      "inner_balanced_accuracy_at_threshold": 0.6296296296296297
+    },
+    {
+      "fold": 3,
+      "model": "no_graph_unweighted",
+      "k": 0,
+      "class_weighted_loss": false,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.14566126465797424,
+      "inner_balanced_accuracy_at_threshold": 0.6782407407407407
+    },
+    {
+      "fold": 3,
+      "model": "k7_graph_unweighted",
+      "k": 7,
+      "class_weighted_loss": false,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.19469380378723145,
+      "inner_balanced_accuracy_at_threshold": 0.6851851851851851
+    },
+    {
+      "fold": 4,
+      "model": "no_graph_weighted",
+      "k": 0,
+      "class_weighted_loss": true,
+      "inner_train_patients": 140,
+      "early_stop_patients": 35,
+      "outer_patients": 43,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.5271719694137573,
+      "inner_balanced_accuracy_at_threshold": 0.7638888888888888
+    },
+    {
+      "fold": 4,
+      "model": "k7_graph_weighted",
+      "k": 7,
+      "class_weighted_loss": true,
+      "inner_train_patients": 140,
+      "early_stop_patients": 35,
+      "outer_patients": 43,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.4146662950515747,
+      "inner_balanced_accuracy_at_threshold": 0.7384259259259259
+    },
+    {
+      "fold": 4,
+      "model": "no_graph_unweighted",
+      "k": 0,
+      "class_weighted_loss": false,
+      "inner_train_patients": 140,
+      "early_stop_patients": 35,
+      "outer_patients": 43,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.5,
+      "inner_balanced_accuracy_at_threshold": 0.7384259259259259
+    },
+    {
+      "fold": 4,
+      "model": "k7_graph_unweighted",
+      "k": 7,
+      "class_weighted_loss": false,
+      "inner_train_patients": 140,
+      "early_stop_patients": 35,
+      "outer_patients": 43,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.10237514972686768,
+      "inner_balanced_accuracy_at_threshold": 0.7199074074074074
+    },
+    {
+      "fold": 5,
+      "model": "no_graph_weighted",
+      "k": 0,
+      "class_weighted_loss": true,
+      "inner_train_patients": 140,
+      "early_stop_patients": 35,
+      "outer_patients": 43,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.495890736579895,
+      "inner_balanced_accuracy_at_threshold": 0.5555555555555556
+    },
+    {
+      "fold": 5,
+      "model": "k7_graph_weighted",
+      "k": 7,
+      "class_weighted_loss": true,
+      "inner_train_patients": 140,
+      "early_stop_patients": 35,
+      "outer_patients": 43,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.5175870656967163,
+      "inner_balanced_accuracy_at_threshold": 0.6111111111111112
+    },
+    {
+      "fold": 5,
+      "model": "no_graph_unweighted",
+      "k": 0,
+      "class_weighted_loss": false,
+      "inner_train_patients": 140,
+      "early_stop_patients": 35,
+      "outer_patients": 43,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.013698465190827847,
+      "inner_balanced_accuracy_at_threshold": 0.6851851851851851
+    },
+    {
+      "fold": 5,
+      "model": "k7_graph_unweighted",
+      "k": 7,
+      "class_weighted_loss": false,
+      "inner_train_patients": 140,
+      "early_stop_patients": 35,
+      "outer_patients": 43,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.007098712492734194,
+      "inner_balanced_accuracy_at_threshold": 0.5601851851851851
+    }
+  ]
+}

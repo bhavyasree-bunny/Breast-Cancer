@@ -1,0 +1,70 @@
+{
+  "scope": "available training and validation patients only",
+  "patients": 92,
+  "features": {
+    "age_at_diagnosis": {
+      "train": {
+        "patients": 68,
+        "missing": 0,
+        "unique_nonmissing": 68,
+        "range_years": [
+          29.60164271047228,
+          82.36824093086926
+        ]
+      },
+      "validation": {
+        "patients": 24,
+        "missing": 1,
+        "unique_nonmissing": 23,
+        "range_years": [
+          36.52292950034223,
+          87.77823408624229
+        ]
+      }
+    },
+    "race": {
+      "train": {
+        "patients": 68,
+        "missing": 12,
+        "unique_nonmissing": 2,
+        "counts": {
+          "white": 44,
+          "black or african american": 12,
+          "not reported": 12
+        }
+      },
+      "validation": {
+        "patients": 24,
+        "missing": 4,
+        "unique_nonmissing": 2,
+        "counts": {
+          "white": 14,
+          "black or african american": 6,
+          "not reported": 4
+        }
+      }
+    },
+    "ethnicity": {
+      "train": {
+        "patients": 68,
+        "missing": 16,
+        "unique_nonmissing": 2,
+        "counts": {
+          "not hispanic or latino": 51,
+          "not reported": 16,
+          "hispanic or latino": 1
+        }
+      },
+      "validation": {
+        "patients": 24,
+        "missing": 6,
+        "unique_nonmissing": 1,
+        "counts": {
+          "not hispanic or latino": 18,
+          "not reported": 6
+        }
+      }
+    }
+  },
+  "excluded_features": "Stage and gender are entirely missing in saved exports; clinical extraction is still a debug script."
+}

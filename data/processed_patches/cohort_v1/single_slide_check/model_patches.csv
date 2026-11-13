@@ -1,0 +1,2 @@
+patient_id,case_uuid,slide_file_uuid,patch_file,x,y,level,mpp_x,tissue_percent,normalization_method
+TCGA-3C-AALK,c31900a4-5dcd-4022-97ac-638e86e889e4,93b26333-5723-4fa4-a4de-6124c04ab243,data/processed_patches/cohort_v1/single_slide_check/93b26333-5723-4fa4-a4de-6124c04ab243/patch_0000.png,28885,3103,0,0.25,56.212133,modified_macenko

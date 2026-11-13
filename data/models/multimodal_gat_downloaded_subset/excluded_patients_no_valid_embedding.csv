@@ -1,0 +1,5 @@
+case_uuid,patient_id,label,split,age_at_diagnosis,race,ethnicity
+2bcacfd1-6a45-4b96-9b80-2ad569b1ab45,TCGA-S3-AA12,0,train,30101.0,black or african american,not hispanic or latino
+45013972-2dfd-4f82-a076-e3e4af1b43b8,TCGA-UU-A93S,0,train,23278.0,black or african american,not hispanic or latino
+5cd79093-1571-4f71-8136-0d84ccabdcac,TCGA-WT-AB44,1,train,,white,not hispanic or latino
+f81ac8a2-4ce6-439e-b027-1c0bfc88ceaa,TCGA-OL-A66P,0,train,27489.0,black or african american,not hispanic or latino

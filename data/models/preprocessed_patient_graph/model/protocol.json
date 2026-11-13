@@ -1,0 +1,63 @@
+{
+  "configs": [
+    {
+      "k": 3,
+      "minimum": 0.0,
+      "dropout": 0.2,
+      "lr": 0.0003
+    },
+    {
+      "k": 3,
+      "minimum": 0.0,
+      "dropout": 0.2,
+      "lr": 0.001
+    },
+    {
+      "k": 3,
+      "minimum": 0.25,
+      "dropout": 0.2,
+      "lr": 0.0003
+    },
+    {
+      "k": 3,
+      "minimum": 0.25,
+      "dropout": 0.2,
+      "lr": 0.001
+    },
+    {
+      "k": 7,
+      "minimum": 0.0,
+      "dropout": 0.2,
+      "lr": 0.0003
+    },
+    {
+      "k": 7,
+      "minimum": 0.0,
+      "dropout": 0.2,
+      "lr": 0.001
+    },
+    {
+      "k": 7,
+      "minimum": 0.25,
+      "dropout": 0.2,
+      "lr": 0.0003
+    },
+    {
+      "k": 7,
+      "minimum": 0.25,
+      "dropout": 0.2,
+      "lr": 0.001
+    }
+  ],
+  "seeds": [
+    42,
+    7,
+    2026
+  ],
+  "criterion": "mean seed validation balanced accuracy; mean macro-F1 then log-loss tie-break",
+  "threshold": 0.5,
+  "epochs": 150,
+  "patience": 30,
+  "cohort_sha256": "ed5441684b966cf2622a31aa04d34dd70a18a162fad7c9adfadbc248b7c0329b",
+  "test_note": "Previously inspected holdout; no test features loaded during search."
+}

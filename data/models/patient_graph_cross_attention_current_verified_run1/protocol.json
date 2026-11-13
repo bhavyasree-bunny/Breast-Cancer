@@ -1,0 +1,65 @@
+{
+  "configs": [
+    {
+      "k": 3,
+      "minimum": 0.0,
+      "dropout": 0.2,
+      "lr": 0.0003
+    },
+    {
+      "k": 3,
+      "minimum": 0.0,
+      "dropout": 0.2,
+      "lr": 0.001
+    },
+    {
+      "k": 3,
+      "minimum": 0.25,
+      "dropout": 0.2,
+      "lr": 0.0003
+    },
+    {
+      "k": 3,
+      "minimum": 0.25,
+      "dropout": 0.2,
+      "lr": 0.001
+    },
+    {
+      "k": 7,
+      "minimum": 0.0,
+      "dropout": 0.2,
+      "lr": 0.0003
+    },
+    {
+      "k": 7,
+      "minimum": 0.0,
+      "dropout": 0.2,
+      "lr": 0.001
+    },
+    {
+      "k": 7,
+      "minimum": 0.25,
+      "dropout": 0.2,
+      "lr": 0.0003
+    },
+    {
+      "k": 7,
+      "minimum": 0.25,
+      "dropout": 0.2,
+      "lr": 0.001
+    }
+  ],
+  "seeds": [
+    42,
+    7,
+    2026
+  ],
+  "criterion": "mean seed validation balanced accuracy; mean macro-F1 then log-loss tie-break",
+  "fusion": "bidirectional multihead cross-attention between 32 image embedding chunks and age/demographic clinical tokens",
+  "graph_features": "cross-attention fused vectors from the fixed initial attention state; the same state initializes each trainable fusion model",
+  "threshold": 0.5,
+  "epochs": 150,
+  "patience": 30,
+  "cohort_sha256": "6fd943c56a4aea74664dd7046dd64093edd32eadee36c8f0089ed38295df4ddb",
+  "test_note": "Previously inspected holdout; no test features loaded during search."
+}

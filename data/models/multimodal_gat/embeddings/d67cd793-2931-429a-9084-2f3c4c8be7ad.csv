@@ -1,0 +1,5 @@
+case_uuid,slide_file_uuid,patch_file,x,y,level,mpp_x,normalization
+d67cd793-2931-429a-9084-2f3c4c8be7ad,e5129752-96e7-4081-91de-8786afd6d9aa,data/models/multimodal_gat/patches/e5129752-96e7-4081-91de-8786afd6d9aa/x12343_y3129.png,12343,3129,0,0.2485,modified_macenko
+d67cd793-2931-429a-9084-2f3c4c8be7ad,e5129752-96e7-4081-91de-8786afd6d9aa,data/models/multimodal_gat/patches/e5129752-96e7-4081-91de-8786afd6d9aa/x12014_y3458.png,12014,3458,0,0.2485,modified_macenko
+d67cd793-2931-429a-9084-2f3c4c8be7ad,e5129752-96e7-4081-91de-8786afd6d9aa,data/models/multimodal_gat/patches/e5129752-96e7-4081-91de-8786afd6d9aa/x14565_y3705.png,14565,3705,0,0.2485,modified_macenko
+d67cd793-2931-429a-9084-2f3c4c8be7ad,e5129752-96e7-4081-91de-8786afd6d9aa,data/models/multimodal_gat/patches/e5129752-96e7-4081-91de-8786afd6d9aa/x14401_y3952.png,14401,3952,0,0.2485,modified_macenko

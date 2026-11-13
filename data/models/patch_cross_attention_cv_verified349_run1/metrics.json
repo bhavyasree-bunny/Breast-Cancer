@@ -1,0 +1,176 @@
+{
+  "cohort_patients": 218,
+  "class_counts": {
+    "ductal": 169,
+    "lobular": 49
+  },
+  "outer_folds": 5,
+  "fold_seed": 20261101,
+  "model_seeds": [
+    42,
+    7,
+    2026
+  ],
+  "epochs": 150,
+  "protocol": "Stratified patient-level outer folds; clinical and patch scalers fit on inner training data only; early stopping and threshold selection use inner validation only; outer-fold predictions are out-of-fold. Fixed comparison: no graph versus k=7 graph. Frozen ImageNet ResNet-50 patch embeddings.",
+  "results": {
+    "no_graph": {
+      "patients": 218,
+      "accuracy": 0.5321100917431193,
+      "balanced_accuracy": 0.5315783117980921,
+      "macro_f1": 0.4879801050013816,
+      "roc_auc": 0.5621301775147929,
+      "log_loss": 0.6580054193064174,
+      "confusion_matrix": [
+        [
+          90,
+          79
+        ],
+        [
+          23,
+          26
+        ]
+      ]
+    },
+    "k7_graph": {
+      "patients": 218,
+      "accuracy": 0.481651376146789,
+      "balanced_accuracy": 0.5569979471078372,
+      "macro_f1": 0.4662766764164229,
+      "roc_auc": 0.5989614780823571,
+      "log_loss": 0.6356654767579751,
+      "confusion_matrix": [
+        [
+          71,
+          98
+        ],
+        [
+          15,
+          34
+        ]
+      ]
+    }
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "model": "no_graph",
+      "k": 0,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.47834187746047974,
+      "inner_balanced_accuracy_at_threshold": 0.6944444444444444
+    },
+    {
+      "fold": 1,
+      "model": "k7_graph",
+      "k": 7,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.16071176528930664,
+      "inner_balanced_accuracy_at_threshold": 0.6481481481481481
+    },
+    {
+      "fold": 2,
+      "model": "no_graph",
+      "k": 0,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.5566911697387695,
+      "inner_balanced_accuracy_at_threshold": 0.650462962962963
+    },
+    {
+      "fold": 2,
+      "model": "k7_graph",
+      "k": 7,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.4490044116973877,
+      "inner_balanced_accuracy_at_threshold": 0.6574074074074074
+    },
+    {
+      "fold": 3,
+      "model": "no_graph",
+      "k": 0,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.46280282735824585,
+      "inner_balanced_accuracy_at_threshold": 0.6481481481481481
+    },
+    {
+      "fold": 3,
+      "model": "k7_graph",
+      "k": 7,
+      "inner_train_patients": 139,
+      "early_stop_patients": 35,
+      "outer_patients": 44,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.4241444766521454,
+      "inner_balanced_accuracy_at_threshold": 0.6296296296296297
+    },
+    {
+      "fold": 4,
+      "model": "no_graph",
+      "k": 0,
+      "inner_train_patients": 140,
+      "early_stop_patients": 35,
+      "outer_patients": 43,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.5271719694137573,
+      "inner_balanced_accuracy_at_threshold": 0.7638888888888888
+    },
+    {
+      "fold": 4,
+      "model": "k7_graph",
+      "k": 7,
+      "inner_train_patients": 140,
+      "early_stop_patients": 35,
+      "outer_patients": 43,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.41460883617401123,
+      "inner_balanced_accuracy_at_threshold": 0.7384259259259259
+    },
+    {
+      "fold": 5,
+      "model": "no_graph",
+      "k": 0,
+      "inner_train_patients": 140,
+      "early_stop_patients": 35,
+      "outer_patients": 43,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.495890736579895,
+      "inner_balanced_accuracy_at_threshold": 0.5555555555555556
+    },
+    {
+      "fold": 5,
+      "model": "k7_graph",
+      "k": 7,
+      "inner_train_patients": 140,
+      "early_stop_patients": 35,
+      "outer_patients": 43,
+      "min_patch_tokens": 4,
+      "max_patch_tokens": 16,
+      "selected_threshold": 0.5175870656967163,
+      "inner_balanced_accuracy_at_threshold": 0.6111111111111112
+    }
+  ]
+}

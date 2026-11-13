@@ -1,0 +1,54 @@
+# Virtual environments
+.venv/
+.venv-model/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# macOS
+.DS_Store
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# IDE files
+.vscode/
+.idea/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/.venv-model/
+
+# Large datasets
+data/images/tcga_brca_500/
+
+# Whole-slide pathology images
+*.svs
+*.svs.part
+
+# Incomplete downloads
+*.part
